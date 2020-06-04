@@ -1,17 +1,9 @@
-# Covid_19 Action Items
-Research Paper Text Analysis for COVID-19 papers on Kaggle Competition
+# Abstract Analytics for COVID-19 Research
+## Iqra Munuwar and Sameen Salam
+This repository contains our work on cleaning, posturing, modeling, and summarizing abstracts of research papers pertaining to COVID-19. 
 
-# Solved Items
-Successful lower-casing, word-tokenization, stopword-removal, punctuation stripping, numeric stripping, and lemmatization of individual abstracts. 
-
-Function created for aforementioned text processing pipeline: doc_proc. Tested, and seems to work. I have **not** yet run it on the whole dataset because it takes a while, wanted to check with team before running it on the whole dataset. 
-
-# Pending Items
-Deciding on next steps for text processing and modeling. I personally am still pretty set on starting with some kind of TF-IDF model to really distill out the common language across this type of scientific literature. For example, the word virus might be somewhat rare in normal conversation, but it is extremely common in these academic papers. If we do TF-IDF across all papers in this dataset, then we can mitigate the importances of those words. Open to anything though. Potentially address some formal tasks as well.  
-
-
--Address abbreviation ambiguity (same abbreviation, different meanings)  
--Address if abbreviations (post lowercasing) are stopwords (if something like ARE or AND mean something)  
-    +Comment out lowercasing code  
--Workaround for appending every single unique possible symbol (exclude everything that isn't alpha numeric?)  
--Run doc_proc on the entire datasets  
+# Motivations
+We want this public health crisis resolved as quickly and effectively as possible to reduce loss of life and further economic damage. And while neither of us are biologists or public health experts, we wanted to do our piece by taking a stab at distilling and understanding this large body of research. We know that labs tend to work in silos on specific biological, social, or medical phenomena, so the research publications an individual lab consumes tend to have fairly similar subject matter. We also know that labs are too busy to spend so much time reading every single paper that deals with their field of expertise. Additionally, average people may want to see what the science truly says about COVID-19, but may be overwhelmed when confronted by the vast quantities of research. We seek to address the following needs:   
+* Cleaning research paper abstracts to reduce the amount of fluff  
+* Creating a topic model that can group research papers that have not been labeled with their respective field  
+* Extract key insights by summarizing the large body of research abstracts contributing to each individual topic  
