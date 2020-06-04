@@ -1,5 +1,5 @@
 # Abstract Analytics for COVID-19 Research
-Iqra Munuwar and Sameen Salam  
+Iqra Munawar and Sameen Salam  
   
 This repository contains our work on cleaning, posturing, modeling, and summarizing abstracts of research papers pertaining to COVID-19. 
 
